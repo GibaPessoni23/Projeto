@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Model.BusinessViewModel.BusinessViewListModel>
+
+@{
+    ViewBag.Title = "Listagem de Clientes";
+}
+
+    <h2>Listagem de Clientes</h2>
+
+<p>
+    @Html.ActionLink("Novo Cliente", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           #
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_DOCUMENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_SEXO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_ESTD_CIVIL)
+        </th>
+        <th>Ações</th>
+    </tr>
+@if(Model!=null) { 
+foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.HiddenFor(modelItem => item.ID_CLIENTE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_DOCUMENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_SEXO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_ESTD_CIVIL)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new {  id=item.ID_CLIENTE }) |            
+            @Html.ActionLink("Deletar", "Delete", new {  id=item.ID_CLIENTE  })
+        </td>
+    </tr>
+}
+    }
+</table>

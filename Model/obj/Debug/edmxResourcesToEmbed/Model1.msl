@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gti_sistema_cliente_ModelStoreContainer" CdmEntityContainer="gti_sistema_cliente_database_context">
+    <EntitySetMapping Name="TB_CLIENTE">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_CLIENTE">
+        <MappingFragment StoreEntitySet="TB_CLIENTE">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="NM_NOME" ColumnName="NM_NOME" />
+          <ScalarProperty Name="NM_CPF" ColumnName="NM_CPF" />
+          <ScalarProperty Name="DT_NASCIMENTO" ColumnName="DT_NASCIMENTO" />
+          <ScalarProperty Name="TB_CLIENTE_DOCUMENTO_ID_DOCUMENTO" ColumnName="TB_CLIENTE_DOCUMENTO_ID_DOCUMENTO" />
+          <ScalarProperty Name="TB_CLIENTE_ENDERECO_ID_CLTE_ENDCO" ColumnName="TB_CLIENTE_ENDERECO_ID_CLTE_ENDCO" />
+          <ScalarProperty Name="TB_SEXO_ID_SEXO" ColumnName="TB_SEXO_ID_SEXO" />
+          <ScalarProperty Name="TB_ESTADO_CIVIL_ID_ESTD_CIVIL" ColumnName="TB_ESTADO_CIVIL_ID_ESTD_CIVIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLIENTE_DOCUMENTO">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_CLIENTE_DOCUMENTO">
+        <MappingFragment StoreEntitySet="TB_CLIENTE_DOCUMENTO">
+          <ScalarProperty Name="ID_DOCUMENTO" ColumnName="ID_DOCUMENTO" />
+          <ScalarProperty Name="NM_DOCUMENTO" ColumnName="NM_DOCUMENTO" />
+          <ScalarProperty Name="DT_DATA_EXPEDICAO" ColumnName="DT_DATA_EXPEDICAO" />
+          <ScalarProperty Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" ColumnName="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" />
+          <ScalarProperty Name="TB_ORGAO_EXPEDIDOR_ID_ORGAO_EXPEDIDOR" ColumnName="TB_ORGAO_EXPEDIDOR_ID_ORGAO_EXPEDIDOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLIENTE_ENDERECO">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_CLIENTE_ENDERECO">
+        <MappingFragment StoreEntitySet="TB_CLIENTE_ENDERECO">
+          <ScalarProperty Name="ID_CLTE_ENDCO" ColumnName="ID_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_LOGRADOURO_CLTE_ENDCO" ColumnName="NM_LOGRADOURO_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_NUMERO_CLTE_ENDCO" ColumnName="NM_NUMERO_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_CEP_CLTE_ENDCO" ColumnName="NM_CEP_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_COMPLEMENTO_CLTE_ENDCO" ColumnName="NM_COMPLEMENTO_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_BAIRRO_CLTE_ENDCO" ColumnName="NM_BAIRRO_CLTE_ENDCO" />
+          <ScalarProperty Name="NM_CIDADE_CLTE_ENDCO" ColumnName="NM_CIDADE_CLTE_ENDCO" />
+          <ScalarProperty Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" ColumnName="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ESTADO_CIVIL">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_ESTADO_CIVIL">
+        <MappingFragment StoreEntitySet="TB_ESTADO_CIVIL">
+          <ScalarProperty Name="ID_ESTD_CIVIL" ColumnName="ID_ESTD_CIVIL" />
+          <ScalarProperty Name="NM_ESTD_CIVIL" ColumnName="NM_ESTD_CIVIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ORGAO_EXPEDIDOR">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_ORGAO_EXPEDIDOR">
+        <MappingFragment StoreEntitySet="TB_ORGAO_EXPEDIDOR">
+          <ScalarProperty Name="ID_ORGAO_EXPEDIDOR" ColumnName="ID_ORGAO_EXPEDIDOR" />
+          <ScalarProperty Name="ST_ORGAO_EXPDOR" ColumnName="ST_ORGAO_EXPDOR" />
+          <ScalarProperty Name="NM_ORGAO_EXPDOR" ColumnName="NM_ORGAO_EXPDOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SEXO">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_SEXO">
+        <MappingFragment StoreEntitySet="TB_SEXO">
+          <ScalarProperty Name="ID_SEXO" ColumnName="ID_SEXO" />
+          <ScalarProperty Name="NM_SEXO" ColumnName="NM_SEXO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UNIDADE_FEDERATIVA">
+      <EntityTypeMapping TypeName="gti_sistema_cliente_Model.TB_UNIDADE_FEDERATIVA">
+        <MappingFragment StoreEntitySet="TB_UNIDADE_FEDERATIVA">
+          <ScalarProperty Name="ID_UNIDE_FEDA" ColumnName="ID_UNIDE_FEDA" />
+          <ScalarProperty Name="NM_UNIDE_FEDA" ColumnName="NM_UNIDE_FEDA" />
+          <ScalarProperty Name="ST_UNIDE_FEDA_SIGLA" ColumnName="ST_UNIDE_FEDA_SIGLA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

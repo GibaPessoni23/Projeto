@@ -1,0 +1,36 @@
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll.config
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\Model.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.xml
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\obj\Debug\Model.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\obj\Debug\Model.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll.config
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.pdb
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.xml
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll.config
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\Model.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.xml
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\Model\obj\Debug\Model.pdb

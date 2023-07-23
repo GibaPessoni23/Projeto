@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Model.BusinessViewModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Model.BusinessViewModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:58008/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Model.BusinessModel" />
+  <xs:complexType name="BusinessViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DT_DATA_EXPEDICAO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DT_NASCIMENTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_DOCUMENTO" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_BAIRRO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_CEP_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_CIDADE_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_COMPLEMENTO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_DOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_LOGRADOURO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_NUMERO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Model.BusinessModel" minOccurs="0" name="TB_CLIENTE_DOCUMENTO_MVM" nillable="true" type="q1:TB_CLIENTE_DOCUMENTO" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Model.BusinessModel" minOccurs="0" name="TB_CLIENTE_ENDERECO_MVM" nillable="true" type="q2:TB_CLIENTE_ENDERECO" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Model.BusinessModel" minOccurs="0" name="TB_CLIENTE_MVM" nillable="true" type="q3:TB_CLIENTE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessViewModel" nillable="true" type="tns:BusinessViewModel" />
+  <xs:complexType name="ArrayOfBusinessViewListModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BusinessViewListModel" nillable="true" type="tns:BusinessViewListModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBusinessViewListModel" nillable="true" type="tns:ArrayOfBusinessViewListModel" />
+  <xs:complexType name="BusinessViewListModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_DOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_ESTD_CIVIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_SEXO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessViewListModel" nillable="true" type="tns:BusinessViewListModel" />
+</xs:schema>

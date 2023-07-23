@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Model.BusinessModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Model.BusinessModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TB_CLIENTE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DT_NASCIMENTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_ESTADO_CIVI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_SEXO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TB_CLIENTE_DOCUMENTO_ID_DOCUMENTO" type="xs:int" />
+      <xs:element minOccurs="0" name="TB_CLIENTE_ENDERECO_ID_CLTE_ENDCO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TB_CLIENTE" nillable="true" type="tns:TB_CLIENTE" />
+  <xs:complexType name="TB_CLIENTE_DOCUMENTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DT_DATA_EXPEDICAO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_DOCUMENTO" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_DOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_ORGAO_EXPEDITOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_UF_DOCUMENTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TB_CLIENTE_DOCUMENTO" nillable="true" type="tns:TB_CLIENTE_DOCUMENTO" />
+  <xs:complexType name="TB_CLIENTE_ENDERECO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_CLTE_ENDCO" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_BAIRRO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_CEP_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_CIDADE_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_COMPLEMENTO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_LOGRADOURO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_NUMERO_CLTE_ENDCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_UNID_FEDE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TB_CLIENTE_ENDERECO" nillable="true" type="tns:TB_CLIENTE_ENDERECO" />
+</xs:schema>

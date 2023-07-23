@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gti_sistema_cliente_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_CLIENTE">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+      <PropertyRef Name="TB_SEXO_ID_SEXO" />
+      <PropertyRef Name="TB_ESTADO_CIVIL_ID_ESTD_CIVIL" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="Int32" Nullable="false" />
+    <Property Name="NM_NOME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NM_CPF" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DT_NASCIMENTO" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TB_CLIENTE_DOCUMENTO_ID_DOCUMENTO" Type="Int32" Nullable="false" />
+    <Property Name="TB_CLIENTE_ENDERECO_ID_CLTE_ENDCO" Type="Int32" Nullable="false" />
+    <Property Name="TB_SEXO_ID_SEXO" Type="Int32" Nullable="false" />
+    <Property Name="TB_ESTADO_CIVIL_ID_ESTD_CIVIL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE_DOCUMENTO" Relationship="Self.TB_CLIENTE_TB_CLIENTE_DOCUMENTO_FK" FromRole="TB_CLIENTE" ToRole="TB_CLIENTE_DOCUMENTO" />
+    <NavigationProperty Name="TB_CLIENTE_ENDERECO" Relationship="Self.TB_CLIENTE_TB_CLIENTE_ENDERECO_FK" FromRole="TB_CLIENTE" ToRole="TB_CLIENTE_ENDERECO" />
+    <NavigationProperty Name="TB_ESTADO_CIVIL" Relationship="Self.TB_CLIENTE_TB_ESTADO_CIVIL_FK" FromRole="TB_CLIENTE" ToRole="TB_ESTADO_CIVIL" />
+    <NavigationProperty Name="TB_SEXO" Relationship="Self.TB_CLIENTE_TB_SEXO_FK" FromRole="TB_CLIENTE" ToRole="TB_SEXO" />
+  </EntityType>
+  <EntityType Name="TB_CLIENTE_DOCUMENTO">
+    <Key>
+      <PropertyRef Name="ID_DOCUMENTO" />
+    </Key>
+    <Property Name="ID_DOCUMENTO" Type="Int32" Nullable="false" />
+    <Property Name="NM_DOCUMENTO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DT_DATA_EXPEDICAO" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" Type="Int32" Nullable="false" />
+    <Property Name="TB_ORGAO_EXPEDIDOR_ID_ORGAO_EXPEDIDOR" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.TB_CLIENTE_TB_CLIENTE_DOCUMENTO_FK" FromRole="TB_CLIENTE_DOCUMENTO" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_ORGAO_EXPEDIDOR" Relationship="Self.TB_CLIENTE_DOCUMENTO_TB_ORGAO_EXPEDIDOR_FK" FromRole="TB_CLIENTE_DOCUMENTO" ToRole="TB_ORGAO_EXPEDIDOR" />
+    <NavigationProperty Name="TB_UNIDADE_FEDERATIVA" Relationship="Self.TB_CLIENTE_DOCUMENTO_TB_UNIDADE_FEDERATIVA_FK" FromRole="TB_CLIENTE_DOCUMENTO" ToRole="TB_UNIDADE_FEDERATIVA" />
+  </EntityType>
+  <EntityType Name="TB_CLIENTE_ENDERECO">
+    <Key>
+      <PropertyRef Name="ID_CLTE_ENDCO" />
+    </Key>
+    <Property Name="ID_CLTE_ENDCO" Type="Int32" Nullable="false" />
+    <Property Name="NM_LOGRADOURO_CLTE_ENDCO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NM_NUMERO_CLTE_ENDCO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NM_CEP_CLTE_ENDCO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NM_COMPLEMENTO_CLTE_ENDCO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NM_BAIRRO_CLTE_ENDCO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NM_CIDADE_CLTE_ENDCO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.TB_CLIENTE_TB_CLIENTE_ENDERECO_FK" FromRole="TB_CLIENTE_ENDERECO" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_UNIDADE_FEDERATIVA" Relationship="Self.TB_CLIENTE_ENDERECO_TB_UNIDADE_FEDERATIVA_FK" FromRole="TB_CLIENTE_ENDERECO" ToRole="TB_UNIDADE_FEDERATIVA" />
+  </EntityType>
+  <EntityType Name="TB_ESTADO_CIVIL">
+    <Key>
+      <PropertyRef Name="ID_ESTD_CIVIL" />
+    </Key>
+    <Property Name="ID_ESTD_CIVIL" Type="Int32" Nullable="false" />
+    <Property Name="NM_ESTD_CIVIL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.TB_CLIENTE_TB_ESTADO_CIVIL_FK" FromRole="TB_ESTADO_CIVIL" ToRole="TB_CLIENTE" />
+  </EntityType>
+  <EntityType Name="TB_ORGAO_EXPEDIDOR">
+    <Key>
+      <PropertyRef Name="ID_ORGAO_EXPEDIDOR" />
+    </Key>
+    <Property Name="ID_ORGAO_EXPEDIDOR" Type="Int32" Nullable="false" />
+    <Property Name="ST_ORGAO_EXPDOR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="NM_ORGAO_EXPDOR" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_CLIENTE_DOCUMENTO" Relationship="Self.TB_CLIENTE_DOCUMENTO_TB_ORGAO_EXPEDIDOR_FK" FromRole="TB_ORGAO_EXPEDIDOR" ToRole="TB_CLIENTE_DOCUMENTO" />
+  </EntityType>
+  <EntityType Name="TB_SEXO">
+    <Key>
+      <PropertyRef Name="ID_SEXO" />
+    </Key>
+    <Property Name="ID_SEXO" Type="Int32" Nullable="false" />
+    <Property Name="NM_SEXO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.TB_CLIENTE_TB_SEXO_FK" FromRole="TB_SEXO" ToRole="TB_CLIENTE" />
+  </EntityType>
+  <EntityType Name="TB_UNIDADE_FEDERATIVA">
+    <Key>
+      <PropertyRef Name="ID_UNIDE_FEDA" />
+    </Key>
+    <Property Name="ID_UNIDE_FEDA" Type="Int32" Nullable="false" />
+    <Property Name="NM_UNIDE_FEDA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ST_UNIDE_FEDA_SIGLA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_CLIENTE_DOCUMENTO" Relationship="Self.TB_CLIENTE_DOCUMENTO_TB_UNIDADE_FEDERATIVA_FK" FromRole="TB_UNIDADE_FEDERATIVA" ToRole="TB_CLIENTE_DOCUMENTO" />
+    <NavigationProperty Name="TB_CLIENTE_ENDERECO" Relationship="Self.TB_CLIENTE_ENDERECO_TB_UNIDADE_FEDERATIVA_FK" FromRole="TB_UNIDADE_FEDERATIVA" ToRole="TB_CLIENTE_ENDERECO" />
+  </EntityType>
+  <Association Name="TB_CLIENTE_TB_CLIENTE_DOCUMENTO_FK">
+    <End Role="TB_CLIENTE_DOCUMENTO" Type="Self.TB_CLIENTE_DOCUMENTO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENTE_DOCUMENTO">
+        <PropertyRef Name="ID_DOCUMENTO" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="TB_CLIENTE_DOCUMENTO_ID_DOCUMENTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_TB_CLIENTE_ENDERECO_FK">
+    <End Role="TB_CLIENTE_ENDERECO" Type="Self.TB_CLIENTE_ENDERECO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENTE_ENDERECO">
+        <PropertyRef Name="ID_CLTE_ENDCO" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="TB_CLIENTE_ENDERECO_ID_CLTE_ENDCO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_TB_ESTADO_CIVIL_FK">
+    <End Role="TB_ESTADO_CIVIL" Type="Self.TB_ESTADO_CIVIL" Multiplicity="1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ESTADO_CIVIL">
+        <PropertyRef Name="ID_ESTD_CIVIL" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="TB_ESTADO_CIVIL_ID_ESTD_CIVIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_TB_SEXO_FK">
+    <End Role="TB_SEXO" Type="Self.TB_SEXO" Multiplicity="1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SEXO">
+        <PropertyRef Name="ID_SEXO" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="TB_SEXO_ID_SEXO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_DOCUMENTO_TB_ORGAO_EXPEDIDOR_FK">
+    <End Role="TB_ORGAO_EXPEDIDOR" Type="Self.TB_ORGAO_EXPEDIDOR" Multiplicity="1" />
+    <End Role="TB_CLIENTE_DOCUMENTO" Type="Self.TB_CLIENTE_DOCUMENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGAO_EXPEDIDOR">
+        <PropertyRef Name="ID_ORGAO_EXPEDIDOR" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE_DOCUMENTO">
+        <PropertyRef Name="TB_ORGAO_EXPEDIDOR_ID_ORGAO_EXPEDIDOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_DOCUMENTO_TB_UNIDADE_FEDERATIVA_FK">
+    <End Role="TB_UNIDADE_FEDERATIVA" Type="Self.TB_UNIDADE_FEDERATIVA" Multiplicity="1" />
+    <End Role="TB_CLIENTE_DOCUMENTO" Type="Self.TB_CLIENTE_DOCUMENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UNIDADE_FEDERATIVA">
+        <PropertyRef Name="ID_UNIDE_FEDA" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE_DOCUMENTO">
+        <PropertyRef Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_CLIENTE_ENDERECO_TB_UNIDADE_FEDERATIVA_FK">
+    <End Role="TB_UNIDADE_FEDERATIVA" Type="Self.TB_UNIDADE_FEDERATIVA" Multiplicity="1" />
+    <End Role="TB_CLIENTE_ENDERECO" Type="Self.TB_CLIENTE_ENDERECO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UNIDADE_FEDERATIVA">
+        <PropertyRef Name="ID_UNIDE_FEDA" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE_ENDERECO">
+        <PropertyRef Name="TB_UNIDADE_FEDERATIVA_ID_UNIDE_FEDA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="gti_sistema_cliente_database_context" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_CLIENTE" EntityType="Self.TB_CLIENTE" />
+    <EntitySet Name="TB_CLIENTE_DOCUMENTO" EntityType="Self.TB_CLIENTE_DOCUMENTO" />
+    <EntitySet Name="TB_CLIENTE_ENDERECO" EntityType="Self.TB_CLIENTE_ENDERECO" />
+    <EntitySet Name="TB_ESTADO_CIVIL" EntityType="Self.TB_ESTADO_CIVIL" />
+    <EntitySet Name="TB_ORGAO_EXPEDIDOR" EntityType="Self.TB_ORGAO_EXPEDIDOR" />
+    <EntitySet Name="TB_SEXO" EntityType="Self.TB_SEXO" />
+    <EntitySet Name="TB_UNIDADE_FEDERATIVA" EntityType="Self.TB_UNIDADE_FEDERATIVA" />
+    <AssociationSet Name="TB_CLIENTE_TB_CLIENTE_DOCUMENTO_FK" Association="Self.TB_CLIENTE_TB_CLIENTE_DOCUMENTO_FK">
+      <End Role="TB_CLIENTE_DOCUMENTO" EntitySet="TB_CLIENTE_DOCUMENTO" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_TB_CLIENTE_ENDERECO_FK" Association="Self.TB_CLIENTE_TB_CLIENTE_ENDERECO_FK">
+      <End Role="TB_CLIENTE_ENDERECO" EntitySet="TB_CLIENTE_ENDERECO" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_TB_ESTADO_CIVIL_FK" Association="Self.TB_CLIENTE_TB_ESTADO_CIVIL_FK">
+      <End Role="TB_ESTADO_CIVIL" EntitySet="TB_ESTADO_CIVIL" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_TB_SEXO_FK" Association="Self.TB_CLIENTE_TB_SEXO_FK">
+      <End Role="TB_SEXO" EntitySet="TB_SEXO" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_DOCUMENTO_TB_ORGAO_EXPEDIDOR_FK" Association="Self.TB_CLIENTE_DOCUMENTO_TB_ORGAO_EXPEDIDOR_FK">
+      <End Role="TB_ORGAO_EXPEDIDOR" EntitySet="TB_ORGAO_EXPEDIDOR" />
+      <End Role="TB_CLIENTE_DOCUMENTO" EntitySet="TB_CLIENTE_DOCUMENTO" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_DOCUMENTO_TB_UNIDADE_FEDERATIVA_FK" Association="Self.TB_CLIENTE_DOCUMENTO_TB_UNIDADE_FEDERATIVA_FK">
+      <End Role="TB_UNIDADE_FEDERATIVA" EntitySet="TB_UNIDADE_FEDERATIVA" />
+      <End Role="TB_CLIENTE_DOCUMENTO" EntitySet="TB_CLIENTE_DOCUMENTO" />
+    </AssociationSet>
+    <AssociationSet Name="TB_CLIENTE_ENDERECO_TB_UNIDADE_FEDERATIVA_FK" Association="Self.TB_CLIENTE_ENDERECO_TB_UNIDADE_FEDERATIVA_FK">
+      <End Role="TB_UNIDADE_FEDERATIVA" EntitySet="TB_UNIDADE_FEDERATIVA" />
+      <End Role="TB_CLIENTE_ENDERECO" EntitySet="TB_CLIENTE_ENDERECO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

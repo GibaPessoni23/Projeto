@@ -1,0 +1,30 @@
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll.config
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CopyComplete
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.AssemblyReference.cache
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CoreCompileInputs.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.pdb
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.pdb
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll.config
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.AssemblyReference.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CoreCompileInputs.cache
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CopyComplete
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.dll
+C:\Users\55119\Downloads\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\DataBaseContext.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\bin\Debug\Model.dll.config
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.AssemblyReference.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.csproj.CopyComplete
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\DataBaseContext\obj\Debug\DataBaseContext.pdb

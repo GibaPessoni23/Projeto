@@ -1,0 +1,25 @@
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.dll.config
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\DataBaseContext.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\DataBaseContext.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.pdb
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.dll.config
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.csprojAssemblyReference.cache
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.csproj.CopyComplete
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.dll
+C:\Users\Programador\source\repos\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.dll.config
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\WCFServiceContract.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\DataBaseContext.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\DataBaseContext.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\bin\Model.dll.config
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.csproj.AssemblyReference.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.csproj.CopyComplete
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.dll
+C:\Users\55119\OneDrive\Área de Trabalho\GITSolution_Sistema_cliente\GITSolution_Sistema_cliente\WCFServiceContract\obj\Debug\WCFServiceContract.pdb

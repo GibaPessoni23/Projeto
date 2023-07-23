@@ -1,0 +1,298 @@
+﻿@model Model.BusinessViewModel.BusinessViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar Cliente</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_MVM.NM_NOME, htmlAttributes: new { @class = "control-label col-md-2", @required="true" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_MVM.NM_NOME, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_MVM.NM_NOME, "*", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_MVM.NM_CPF, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_MVM.NM_CPF, new { htmlAttributes = new { @id = "cpfCampo", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_MVM.NM_CPF, "*", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_MVM.DT_NASCIMENTO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_MVM.DT_NASCIMENTO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_MVM.DT_NASCIMENTO, "*", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Sexo", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("selectSexo", new List<SelectListItem>
+            {
+            new SelectListItem{ Text="Masculino", Value="Masculino" }, new SelectListItem{Text="Feminino", Value="Feminino"  }
+
+        })
+
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Estado Civil", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("selectEsCivil", new List<SelectListItem>
+            {
+            new SelectListItem{ Text="Solteiro", Value="Solteiro"}, new SelectListItem{Text="Casado", Value="Casado" },new SelectListItem{Text="Separado", Value="Separado" }
+
+        })
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <h3>Documento</h3>
+    <div class="form-group">
+
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.ID_DOCUMENTO, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.NM_DOCUMENTO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.NM_DOCUMENTO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.NM_DOCUMENTO, "*", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.DT_DATA_EXPEDICAO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_DOCUMENTO_MVM.DT_DATA_EXPEDICAO, new { htmlAttributes = new { @class = "form-control" } })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Orgão Expedidor", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("selectOrgao", new List<SelectListItem>
+            {
+            new SelectListItem{ Text="SSP", Value="SSP"}, new SelectListItem{Text="AGU", Value="AGU" },new SelectListItem{Text="Outros", Value="Outros" }
+
+        })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("UF Expedição", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("selectUfExpedicao", new List<SelectListItem>
+            {
+          new SelectListItem{ Text="SP", Value="SP" }, new SelectListItem{Text="DF", Value="DF" },new SelectListItem{Text="Outros", Value="Outros" }
+
+        })
+
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <h3>Endereço</h3>
+    <div class="form-group">
+
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.TB_CLIENTE_ENDERECO_MVM.ID_CLTE_ENDCO, new { htmlAttributes = new { @class = "form-control" } })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CEP_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CEP_CLTE_ENDCO, new { htmlAttributes = new { @id = "CampoCep", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CEP_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_LOGRADOURO_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_LOGRADOURO_CLTE_ENDCO, new { htmlAttributes = new { @id = "rua", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_LOGRADOURO_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_NUMERO_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_NUMERO_CLTE_ENDCO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_NUMERO_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_COMPLEMENTO_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_COMPLEMENTO_CLTE_ENDCO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_COMPLEMENTO_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_BAIRRO_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_BAIRRO_CLTE_ENDCO, new { htmlAttributes = new { @id = "bairro", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_BAIRRO_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CIDADE_CLTE_ENDCO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CIDADE_CLTE_ENDCO, new { htmlAttributes = new { @id = "cidade", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_CIDADE_CLTE_ENDCO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Unidade Federativa", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TB_CLIENTE_ENDERECO_MVM.NM_UNID_FEDE, new { htmlAttributes = new { @id = "uf", @class = "form-control" } })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Editar Cliente" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Voltar Listagem", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var $CampoCpf = $("#cpfCampo");
+            $CampoCpf.mask('000.000.000-00', { reverse: true });
+
+              //Busca endereço de acordo com o CEP fornecido e preenche os campos: Rua, Bairro e Cidade
+            $("#CampoCep").blur(function () {
+
+                var cep = $("#CampoCep").val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if (validacep.test(cep)) {
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("//viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#rua").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                console.log("CEP não encontrado.");
+                            }
+                        });
+                    } //end if.
+                    else {
+                        alert("Formato de CEP inválido. Informe um CEP válido");
+                    }
+                } //end if.
+
+            });
+
+             //Valida se o CPF é válido
+            $("#cpfCampo").blur(function () {
+                var cpf = $("#cpfCampo").val();
+                cpf = cpf.replace(/[^\d]+/g, '');
+
+                if (cpf != '') {
+
+
+
+
+
+                // Elimina CPFs invalidos conhecidos
+                if (cpf.length != 11 ||
+                    cpf == "00000000000" ||
+                    cpf == "11111111111" ||
+                    cpf == "22222222222" ||
+                    cpf == "33333333333" ||
+                    cpf == "44444444444" ||
+                    cpf == "55555555555" ||
+                    cpf == "66666666666" ||
+                    cpf == "77777777777" ||
+                    cpf == "88888888888" ||
+                    cpf == "99999999999")
+                     alert("CPF inválido");
+
+
+                // Valida 1o digito
+                add = 0;
+                for (i = 0; i < 9; i++)
+                    add += parseInt(cpf.charAt(i)) * (10 - i);
+                rev = 11 - (add % 11);
+                if (rev == 10 || rev == 11)
+                    rev = 0;
+                if (rev != parseInt(cpf.charAt(9))) {
+                    alert("CPF inválido");
+
+                }
+
+                // Valida 2o digito
+                add = 0;
+                for (i = 0; i < 10; i++)
+                    add += parseInt(cpf.charAt(i)) * (11 - i);
+                rev = 11 - (add % 11);
+                if (rev == 10 || rev == 11)
+                    rev = 0;
+                if (rev != parseInt(cpf.charAt(10))) {
+                    alert("CPF inválido");
+                }
+
+                      }
+            })
+
+
+        });
+
+
+    </script>
+}
